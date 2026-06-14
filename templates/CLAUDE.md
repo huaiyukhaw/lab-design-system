@@ -4,7 +4,7 @@ Guidance for Claude Code in this repo. (Merge into an existing `CLAUDE.md` if yo
 
 ## Design system
 
-This app uses the **Orangeleaf / PromptLab design system**, vendored as a git submodule at
+This app uses the **PromptLab design system**, vendored as a git submodule at
 `design-system/` (adjust the path below if you mounted it elsewhere). It is a warm, quiet,
 editorial, **light-theme-only** system.
 

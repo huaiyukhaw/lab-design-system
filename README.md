@@ -1,4 +1,4 @@
-# Orangeleaf / PromptLab Design System
+# PromptLab Design System
 
 A portable definition of the **PromptLab** visual language — its tokens, components, and
 patterns — packaged as a **standalone, submodule-ready kit** so it can seed new apps. Vendor

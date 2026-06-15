@@ -1,0 +1,13 @@
+# Dependencies (if a consumer/build is ever added here)
+node_modules
+
+# Playwright / MCP browser artifacts (console logs, page snapshots, screenshots)
+.playwright-mcp/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.sw?

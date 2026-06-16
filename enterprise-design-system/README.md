@@ -1,6 +1,6 @@
-# PromptLab Design System — Enterprise (blue/white)
+# Lab Design System — Enterprise (blue/white)
 
-A **color retheme** of the [PromptLab design system](../lab-design-system). It is the
+A **color retheme** of the Lab design system (the `lab-design-system` repo). It is the
 *same* system — identical typography, type scale, weights, line heights, spacing, radii,
 shadow geometry, motion, breakpoints, component anatomy, and **token names** — wearing a
 **modern blue/white enterprise palette** instead of the original warm clay-on-cream look.
@@ -140,14 +140,14 @@ All text-on-surface pairings were verified against white (`#ffffff`) and the coo
   source, it stays a reserved/secondary accent.
 - **`error`/`warning` (red/amber) kept at source values** — already accessible and
   universally legible; changing them added risk without benefit.
-- **Product name kept as "PromptLab"** across the docs/styleguide. The brief was "identical
-  in every respect *except* color"; a name is not a color, so it was not changed. This README
-  is the one place that frames the directory as the enterprise blue variant. Rename the brand
-  layer per product if you prefer (see `brand.md`).
-- **Token-file comments left verbatim.** `tokens.css` / `tokens.json` / `tailwind.tokens.js`
-  had only their color *values* changed; inline comments were left as-is so a diff of the
-  token files is provably **color-values-only**. The accurate blue/white narrative lives here
-  and in the docs.
+- **Product renamed to "Lab"** (from the original "PromptLab") across the docs/styleguide and
+  the `labTheme` Tailwind export. Rename the brand layer further per product if you prefer
+  (see `brand.md`).
+- **Token-file comments updated for the rename only.** `tokens.css` / `tokens.json` /
+  `tailwind.tokens.js`
+  diverge from the source only in color *values* and the `PromptLab`→`Lab` name; no
+  typography, spacing, radius, shadow-geometry, or motion values changed. The accurate
+  blue/white narrative lives here and in the docs.
 
 ---
 
@@ -164,7 +164,7 @@ are **cool**, a Tailwind app that writes `stone-*` in markup would otherwise sti
    utilities render cool (values match `tokens.css`):
 
    ```js
-   theme: { extend: { ...promptlabTheme, colors: { ...promptlabTheme.colors, stone: {
+   theme: { extend: { ...labTheme, colors: { ...labTheme.colors, stone: {
      50:'#f8fafc',100:'#f1f5f9',200:'#e2e8f0',300:'#cbd5e1',400:'#94a3b8',
      500:'#64748b',600:'#475569',700:'#334155',800:'#1e293b',900:'#0f172a',
    } } } }

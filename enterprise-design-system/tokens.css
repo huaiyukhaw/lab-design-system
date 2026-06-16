@@ -1,5 +1,5 @@
 /*
- * PromptLab design tokens — CSS custom properties.
+ * Lab design tokens — CSS custom properties.
  *
  * A no-build, drop-in form of the system. `@import` or paste this into any app,
  * then reference the variables (e.g. `color: var(--color-text)`).

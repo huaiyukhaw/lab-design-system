@@ -1,14 +1,14 @@
-# PromptLab Design System
+# Lab Design System
 
-A portable definition of the **PromptLab** visual language — its tokens, components, and
+A portable definition of the **Lab** visual language — its tokens, components, and
 patterns — packaged as a **standalone, submodule-ready kit** so it can seed new apps. Vendor
 it into a repo, point Claude Code at it, and build screens that match by construction.
 
-Everything here was extracted **verbatim** from the PromptLab source (`tailwind.config.js`,
+Everything here was extracted **verbatim** from the Lab source (`tailwind.config.js`,
 `src/index.css`, `src/components/ui.tsx`); nothing is invented. Where the source has a gap,
 it's flagged as a gap rather than filled silently.
 
-> Light theme only. The brand specifics (name, logo, tagline) are PromptLab's — the
+> Light theme only. The brand specifics (name, logo, tagline) are Lab's — the
 > foundations and components are meant to travel; adapt the brand layer per product.
 
 ---
@@ -23,7 +23,7 @@ git submodule add <this-repo-url> design-system
 cp design-system/templates/CLAUDE.md ./CLAUDE.md
 
 # 3. Wire it up (details in templates/CLAUDE.md):
-#    - Tailwind: import promptlabTheme from design-system/tailwind.tokens.js into theme.extend
+#    - Tailwind: import labTheme from design-system/tailwind.tokens.js into theme.extend
 #      (or @import design-system/tokens.css for non-Tailwind)
 #    - Add the Google Fonts <link> to <head>
 #    - Put class="ds-canvas ds-canvas-backdrop" on <body> for the cream/dot-grid/glow canvas
@@ -83,7 +83,7 @@ that keeps the system framework-agnostic. The submodule above vendors the spec; 
 
 ### 1. Pick the token file that matches your stack
 
-- **Tailwind app** → `import { promptlabTheme } from './design-system/tailwind.tokens.js'`
+- **Tailwind app** → `import { labTheme } from './design-system/tailwind.tokens.js'`
   and spread it into `theme.extend`. Use `stone-*` for neutrals (intentionally not
   redefined — Tailwind's built-in scale *is* the system's neutral).
 - **Any CSS / other framework** → `@import "design-system/tokens.css"` and reference the
@@ -137,8 +137,8 @@ ladder, a real z-index scale, a modal/overlay layer, and (if needed) a dark them
 
 ## Provenance & sync
 
-This kit was extracted from the **promptlab** repo (`docs/design-system/`). It is the
-distributable copy; when the PromptLab source theme (`tailwind.config.js`, `src/index.css`,
+This kit was extracted from the **lab** repo (`docs/design-system/`). It is the
+distributable copy; when the Lab source theme (`tailwind.config.js`, `src/index.css`,
 `src/components/ui.tsx`) changes materially, re-emit the token files from the same values and
 update the matching spec section here. The token files are the cheapest thing to keep honest —
 diff them against `tailwind.config.js` whenever the theme changes. Consumers pull updates with

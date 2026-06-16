@@ -1,12 +1,12 @@
 /**
- * PromptLab design tokens — Tailwind `theme.extend` block.
+ * Lab design tokens — Tailwind `theme.extend` block.
  *
  * Copy this into a new Tailwind app's `tailwind.config.js`:
  *
- *   import { promptlabTheme } from './path/to/tailwind.tokens.js'
+ *   import { labTheme } from './path/to/tailwind.tokens.js'
  *   export default {
  *     content: ['./index.html', './src/**\/*.{ts,tsx}'],
- *     theme: { extend: promptlabTheme },
+ *     theme: { extend: labTheme },
  *   }
  *
  * Neutrals intentionally reuse Tailwind's built-in `stone` scale (it matches the
@@ -17,7 +17,7 @@
  *   body { @apply bg-cream font-sans text-ink antialiased; }
  *   plus the body::before atmosphere and `.eyebrow` / `.mono-block` utilities.
  */
-export const promptlabTheme = {
+export const labTheme = {
   colors: {
     cream: '#faf9f5',
     ink: { DEFAULT: '#141413', soft: '#3a3733' },
@@ -65,4 +65,4 @@ export const promptlabTheme = {
   },
 }
 
-export default promptlabTheme
+export default labTheme

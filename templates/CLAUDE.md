@@ -4,7 +4,7 @@ Guidance for Claude Code in this repo. (Merge into an existing `CLAUDE.md` if yo
 
 ## Design system
 
-This app uses the **PromptLab design system**, vendored as a git submodule at
+This app uses the **Lab design system**, vendored as a git submodule at
 `design-system/` (adjust the path below if you mounted it elsewhere). It is a warm, quiet,
 editorial, **light-theme-only** system.
 
@@ -17,8 +17,8 @@ editorial, **light-theme-only** system.
 
 - **Tailwind** — in `tailwind.config.js`:
   ```js
-  import { promptlabTheme } from './design-system/tailwind.tokens.js'
-  export default { content: ['./index.html', './src/**/*.{ts,tsx}'], theme: { extend: promptlabTheme } }
+  import { labTheme } from './design-system/tailwind.tokens.js'
+  export default { content: ['./index.html', './src/**/*.{ts,tsx}'], theme: { extend: labTheme } }
   ```
   Then use `bg-cream`, `text-ink`, `text-clay-600`, `bg-clay-500`, `shadow-card`,
   `font-display`, `animate-fade-up`, etc. Neutrals and status colors use Tailwind's

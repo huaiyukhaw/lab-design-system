@@ -194,7 +194,7 @@ secondary chrome (model badge, tagline, button labels) reveals progressively at
 
 Not a token per se, but a defining trait: the canvas carries a **fixed dot-grid + a
 soft clay glow at the top**, behind everything (`body::before`, `z-index: -10`,
-`pointer-events: none`). It must travel with the system to feel like PromptLab.
+`pointer-events: none`). It must travel with the system to feel like Lab.
 
 ```css
 background-image:
